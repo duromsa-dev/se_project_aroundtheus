@@ -3,7 +3,7 @@
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 282px);
   grid-gap: 20px 17px;
-  padding: 48px 0;
+  padding: 48px 0 0;
   margin: 0px;
 }
 
@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   list-style: none;
+  border-radius: 10px;
 }
 
 .cards__image {
@@ -18,6 +19,7 @@
   border-top-right-radius: 10px;
   width: 282px;
   height: 282px;
+  object-fit: cover;
 }
 
 .cards__description {
@@ -54,7 +56,7 @@
 
 .cards__like-button {
   background: transparent url(../images/heart.svg) center;
-  width: 21px;
+  min-width: 21px;
   height: 18px;
   border: none;
   transition: opacity 0.5s;
@@ -62,67 +64,10 @@
 
 .cards__like-button:hover {
   opacity: 50%;
+  cursor: url(../images/hand-icon.svg), auto;
 }
 
 @media screen and (max-width: 480px) {
-  .profile {
-    flex-direction: column;
-    height: 286px;
-  }
-
-  .profile__name {
-    color: #fff;
-    text-align: center;
-    font-family: "Inter", Arial, sans-serif;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    width: 196px;
-    height: 22px;
-    flex-shrink: 0;
-  }
-
-  .profile__image {
-    margin: 0px;
-  }
-
-  .profile__info {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-    margin-top: 26.5px;
-  }
-
-  .profile__description {
-    color: #fff;
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 282px;
-    flex-shrink: 0;
-    margin-top: 14px;
-  }
-
-  .profile__add-button {
-    margin: 0px;
-    min-width: 282px;
-    padding: 0px 19px;
-    margin-top: auto;
-  }
-
-  .profile__edit-button {
-    margin-left: 10px;
-    width: 18px;
-    height: 18px;
-    flex-shrink: 0;
-    margin-bottom: 0px;
-  }
-
   .cards__list {
     margin: 0px;
   }
@@ -131,14 +76,7 @@
   }
   .footer {
     width: 282px;
-    height: 14px;
     flex-shrink: 0;
     padding-bottom: 36px;
-  }
-}
-
-@media screen and (max-width: 877px) {
-  .footer {
-    max-width: 585px;
   }
 }

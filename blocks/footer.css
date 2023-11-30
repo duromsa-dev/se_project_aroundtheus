@@ -6,9 +6,26 @@
   font-weight: 400;
   line-height: normal;
   margin: 0;
-  height: 18px;
   flex-shrink: 0;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 60px;
+  padding-bottom: 42px;
+}
+
+.footer__copyright {
+  margin-top: 62px;
+}
+
+@media screen and (max-width: 877px) {
+  .footer {
+    max-width: 585px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    max-width: 282px;
+    flex-shrink: 0;
+    padding-bottom: 36px;
+  }
 }

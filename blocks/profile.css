@@ -48,7 +48,8 @@
 }
 
 .profile__edit-button:hover {
-  opacity: 50%;
+  opacity: 60%;
+  cursor: url(../images/hand-icon.svg), auto;
 }
 
 .profile__description {
@@ -73,8 +74,67 @@
   margin-left: auto;
   border: solid white;
   transition: opacity 0.5s;
+  gap: 1px;
 }
 
 .profile__add-button:hover {
-  opacity: 50%;
+  opacity: 60%;
+  cursor: url(../images/hand-icon.svg), auto;
+}
+
+@media screen and (max-width: 480px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile__name {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: normal;
+    max-width: 196px;
+    flex-shrink: 0;
+  }
+
+  .profile__image {
+    margin: 0px;
+  }
+
+  .profile__info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    margin-top: 26.5px;
+  }
+
+  .profile__description {
+    text-align: center;
+    font-size: 14px;
+    width: 282px;
+    flex-shrink: 0;
+    margin: 14px 0px 36px;
+  }
+
+  .profile__add-button {
+    margin: 0px;
+    min-width: 282px;
+    padding: 0px 19px;
+    margin-top: auto;
+  }
+
+  .profile__edit-button {
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .profile__edit-button {
+    margin-right: 10px;
+  }
 }
