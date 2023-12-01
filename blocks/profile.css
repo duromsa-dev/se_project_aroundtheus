@@ -90,7 +90,6 @@
   .profile__name {
     text-align: center;
     font-size: 22px;
-    font-weight: 500;
     line-height: normal;
     max-width: 196px;
     flex-shrink: 0;

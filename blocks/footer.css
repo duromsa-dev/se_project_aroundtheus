@@ -26,6 +26,12 @@
   .footer {
     max-width: 282px;
     flex-shrink: 0;
-    padding-bottom: 36px;
+    padding-bottom: 60px;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+    line-height: normal;
+    margin-bottom: 0px;
   }
 }
