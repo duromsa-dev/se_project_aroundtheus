@@ -72,9 +72,5 @@
   .cards__list:first-child {
     padding-top: 36px;
   }
-  .footer {
-    width: 282px;
-    flex-shrink: 0;
-    padding-bottom: 36px;
-  }
+
 }
