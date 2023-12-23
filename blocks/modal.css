@@ -1,0 +1,133 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba 0, 0, 0, 0.5;
+  z-index: 999;
+  display: flex;
+}
+
+.modal__opened {
+}
+
+.modal__container {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 34px 36px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  flex-shrink: 0;
+}
+
+.modal__heading {
+  color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin: 0 0 0 0;
+}
+
+.modal__close {
+  background-image: url(../images/close-Icon.svg);
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: calc(100% + 5px);
+  left: calc(100% + 5px);
+  cursor: url(../images/hand-icon.svg), auto;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 54px;
+}
+
+.modal__field {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.modal__name {
+  height: 14px;
+  padding: 0 0 0 0;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  padding-bottom: 13px;
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.modal__description {
+  height: 14px;
+  padding: 0 0 0 0;
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  padding-bottom: 13px;
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.modal__button {
+  height: 50.152px;
+  padding: none;
+  background-color: black;
+  color: white;
+  padding: 0 0 0 0;
+  margin-top: 48px;
+  transition: opacity 0.5s;
+}
+
+.modal__button:hover {
+  opacity: 60%;
+  cursor: url(../images/hand-icon.svg), auto;
+}
+
+@media screen and (max-width: 480px) {
+  .modal__container {
+    width: calc(100vw - 84px);
+    padding: 25px 22px;
+  }
+
+  .modal__close {
+    bottom: calc(100% + 20px);
+    left: calc(100% - 35px);
+    height: 26px;
+    width: 26px;
+  }
+
+  .modal__form {
+    margin-top: 75px;
+  }
+
+  .modal__field {
+    gap: 30px;
+  }
+
+  .modal__button {
+    margin-top: 45px;
+  }
+}
