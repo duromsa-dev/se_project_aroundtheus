@@ -39,7 +39,7 @@
   max-width: 373px;
 }
 
-.cards__location {
+.cards__title {
   margin: 0px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -72,5 +72,4 @@
   .cards__list:first-child {
     padding-top: 36px;
   }
-
 }
